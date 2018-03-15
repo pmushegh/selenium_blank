@@ -17,8 +17,10 @@ public class WebDriverFactory {
             if (System.getProperty("local") != null) {
                 if (System.getProperty("os.name").startsWith("Windows")) {
                     System.setProperty("webdriver.chrome.driver", "src/test/resources/drivers/chromedriver.exe");
+                    System.out.println("Using Chrome Windows driver.");
                 } else {
                     System.setProperty("webdriver.chrome.driver", "src/test/resources/drivers/chromedriver");
+                    System.out.println("Using Chrome Linux driver.");
                 }
                 driver = new ChromeDriver();
             } else {
@@ -34,9 +36,11 @@ public class WebDriverFactory {
                 if (System.getProperty("selenium.server.hub") != null) {
                     // Remote hub
                     driver = new RemoteWebDriver(new URL(System.getProperty("selenium.server.hub")), desiredCapabilities);
+                    System.out.println("Using remote Selenium hub driver.");
                 } else {
                     // Local hub
                     driver = new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"), desiredCapabilities);
+                    System.out.println("Using local Selenium hub driver.");
                 }
             }
         } catch (Exception ex) {
