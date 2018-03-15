@@ -1,5 +1,10 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 <suite name="Main tests" parallel="tests" thread-count="1">
+    <test name="sample">
+        <classes>
+            <class name="SampleTest"/>
+        </classes>
+    </test>
     <!--<test name="">-->
         <!--<classes>-->
             <!--<class name=""/>-->
