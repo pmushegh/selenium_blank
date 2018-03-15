@@ -11,6 +11,7 @@
     <properties>
         <selenium.java.version>3.11.0</selenium.java.version>
         <testng.version>6.13.1</testng.version>
+        <log4j.version>2.10.0</log4j.version>
         <maver.surfire.plugin.version>2.19.1</maver.surfire.plugin.version>
         <maven.clean.plugin.version>3.0.0</maven.clean.plugin.version>
         <maven.resoure.plugin.version>3.0.2</maven.resoure.plugin.version>
@@ -31,6 +32,18 @@
             <artifactId>testng</artifactId>
             <version>${testng.version}</version>
             <scope>test</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>org.apache.logging.log4j</groupId>
+            <artifactId>log4j-core</artifactId>
+            <version>${log4j.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.apache.logging.log4j</groupId>
+            <artifactId>log4j-api</artifactId>
+            <version>${log4j.version}</version>
         </dependency>
     </dependencies>
 
