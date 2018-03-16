@@ -1,6 +1,9 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 <suite name="Main tests" parallel="tests" thread-count="1">
-    <test name="sample">
+    <listeners>
+        <listener class-name="utils.TestListener"/>
+    </listeners>
+    <test name="Sample">
         <classes>
             <class name="SampleTest"/>
         </classes>

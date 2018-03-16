@@ -26,12 +26,4 @@ public class Log {
     public static void debug(String strMessage) {
         logger.debug(strMessage);
     }
-
-    public static void testCaseStart(String strTestCaseName) {
-        logger.info("### Test case " + strTestCaseName + " start.");
-    }
-
-    public static void testCaseEnd(String strTestCaseName) {
-        logger.info("### Test case" + strTestCaseName + " end.");
-    }
 }
