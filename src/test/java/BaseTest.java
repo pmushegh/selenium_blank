@@ -20,10 +20,9 @@ public abstract class BaseTest {
         driver = new ThreadLocal<>();
         driver.set(WebDriverFactory.createWebDriver());
 
-        // Page creations
+        // Pages initialisation
         samplePage = PageFactory.initElements(webDriver(), SamplePage.class);
 
-        samplePage.open();
     }
 
     @AfterClass(alwaysRun = true)
@@ -32,5 +31,4 @@ public abstract class BaseTest {
             driver.get().close();
         }
     }
-
 }

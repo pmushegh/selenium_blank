@@ -4,6 +4,6 @@ public class SampleTest extends BaseTest {
 
     @Test
     public void someTest() {
-        samplePage.open();
+        samplePage.get();
     }
 }

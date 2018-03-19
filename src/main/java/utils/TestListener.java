@@ -38,7 +38,7 @@ public class TestListener implements ITestListener {
 
     @Override
     public void onFinish(ITestContext iTestContext) {
-        Log.info("#### " + iTestContext.getName() + " test test classes finished.");
+        Log.info("#### " + iTestContext.getName() + " test classes finished.");
     }
 
     private static String getTestMethodName(ITestResult result) {

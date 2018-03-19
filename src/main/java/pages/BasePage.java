@@ -2,9 +2,10 @@ package pages;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.LoadableComponent;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-public abstract class BasePage {
+public abstract class BasePage extends LoadableComponent<BasePage> {
 
     private WebDriver webDriver;
 
@@ -27,5 +28,15 @@ public abstract class BasePage {
 
     protected void open(String pageURL) {
         this.open(pageURL, null, false);
+    }
+
+    @Override
+    protected void load() {
+
+    }
+
+    @Override
+    protected void isLoaded() throws Error {
+
     }
 }

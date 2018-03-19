@@ -8,7 +8,8 @@ public class SamplePage extends BasePage {
             super(webDriver);
     }
 
-    public void open() {
+    @Override
+    protected void load() {
         super.open("http:\\www.google.com");
     }
 }
