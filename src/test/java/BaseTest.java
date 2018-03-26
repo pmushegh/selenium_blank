@@ -22,7 +22,6 @@ public abstract class BaseTest {
 
         // Pages initialisation
         samplePage = PageFactory.initElements(webDriver(), SamplePage.class);
-
     }
 
     @AfterClass(alwaysRun = true)
