@@ -27,7 +27,7 @@ public abstract class BaseTest {
     @AfterClass(alwaysRun = true)
     public void tearDown() {
         if (driver.get() != null) {
-            driver.get().close();
+            driver.get().quit();
         }
     }
 }
