@@ -73,7 +73,7 @@
                 <version>${maver.surfire.plugin.version}</version>
                 <configuration>
                     <systemPropertyVariables>
-                        <application.site.url>https://www.google.com</application.site.url>
+                        <application.site.url>https://upsa.epam.com</application.site.url>
                         <application.page.open.delay>30</application.page.open.delay>
                     </systemPropertyVariables>
                     <suiteXmlFiles>
