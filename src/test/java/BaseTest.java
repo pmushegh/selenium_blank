@@ -1,4 +1,4 @@
-import driverFactory.WebDriverFactory;
+import factory.driver.WebDriverFactory;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.AfterClass;
