@@ -6,10 +6,10 @@ import org.openqa.selenium.support.FindBy;
 
 public class SamplePage extends BasePage {
 
-    private String strPageTitle = "My Profile : General info";
-    private String strPageURL = "/workload/employeeView.do?employeeId=4060741400311846020#emplTab=general";
+    private String strPageTitle = "Հայկական դրամ՝ բոլոր փոխարժեքները";
+    private String strPageURL = "/";
 
-    @FindBy(css = "#employeeAssessmentsContainer > div:nth-child(2) > div:nth-child(1) > span")
+    @FindBy(css = "table.mainmenu")
     private WebElement weFirstLanguage;
 
     public SamplePage(WebDriver webDriver) {

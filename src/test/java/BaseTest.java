@@ -15,7 +15,7 @@ public abstract class BaseTest {
         return driver.get();
     }
 
-    @BeforeTest(alwaysRun = true)
+    @BeforeTest(alwaysRun = true, description = "Before method")
     public void warmUp() {
         driver = new ThreadLocal<>();
         driver.set(WebDriverFactory.createWebDriver());
@@ -24,7 +24,7 @@ public abstract class BaseTest {
         samplePage = PageFactory.initElements(webDriver(), SamplePage.class);
     }
 
-    @AfterClass(alwaysRun = true)
+    @AfterClass(alwaysRun = true, description = "After method")
     public void tearDown() {
         if (driver.get() != null) {
             driver.get().quit();

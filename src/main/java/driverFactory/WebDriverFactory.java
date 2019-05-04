@@ -15,7 +15,7 @@ public class WebDriverFactory {
         final WebDriver driver;
 
         try {
-            if (System.getProperty("local") != null) {
+            if (System.getProperty("remote") == null) {
                 if (System.getProperty("os.name").startsWith("Windows")) {
                     System.setProperty("webdriver.chrome.driver", "src/test/resources/drivers/chromedriver.exe");
                     Log.info("Using Chrome Windows driver.");
